@@ -1,8 +1,8 @@
 package com.github.jabbalaci.fudep.tane;
 
 public class Tane {
-	
-	private final static boolean DEBUG = false;
+
+    private final static boolean DEBUG = false;
 
     private String[] args;
 
@@ -19,9 +19,9 @@ public class Tane {
     private void levelwise_exploration(Dataset db) {
         Level level = new Level(1, db, null);
         if (DEBUG) {
-        	level.show();
+            level.show();
         } else {
-        	System.err.print("."); System.err.flush();
+            System.err.print("."); System.err.flush();
         }
         int i = 1;
         while (true) {
@@ -31,9 +31,9 @@ public class Tane {
                 break;
             }
             if (DEBUG) {
-            	level.show();
+                level.show();
             } else {
-            	System.err.print("."); System.err.flush();
+                System.err.print("."); System.err.flush();
             }
         }
         if (DEBUG == false) System.err.println();

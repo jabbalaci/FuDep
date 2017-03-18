@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Level {
-	
+
     private int length;
     public Dataset db;
     private Level prev_level;
@@ -88,7 +88,7 @@ public class Level {
         }
     }
 
-	private boolean contains_all_subsets_of(BitSet cand) {
+    private boolean contains_all_subsets_of(BitSet cand) {
         if (cand.cardinality() >= 3) {
             for (BitSet sub: Apriori.getOneSizeSmallerSubsetsOf(cand)) {
                 if (this.set_of_itemsets.contains(sub) == false) {
@@ -124,7 +124,7 @@ public class Level {
 //        }
 //        this.rows.removeAll(del);
 ////      System.out.println("after: " + this.rows.size());
-        
+
         List<Row> keep = new ArrayList<>();
         for (Row row: this.rows) {
             if (row.getCPlus().isEmpty() == false) {
