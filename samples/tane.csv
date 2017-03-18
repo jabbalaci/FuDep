@@ -1,0 +1,10 @@
+# the example from the TANE paper
+
+1,a,$,Flower
+1,A, ,Tulip
+2,A,$,Daffodil
+2,A,$,Flower
+2,b, ,Lily
+3,b,$,Orchid
+3,C, ,Flower
+3,C,#,Rose
